@@ -27,6 +27,10 @@ body {
     position: relative !important;
 }
 
+#main-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
 
 
 header{
@@ -107,7 +111,7 @@ main h1{
     width: 2rem;
     position: absolute;
     right: 2%;
-    bottom: 10% !important;
+    bottom: 8%;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -514,15 +518,15 @@ footer{
 .box-icons a:hover{
     color: #7ce9e6;
 }
-
 .project-link{
     text-decoration: none;
     color: lightgray;
     font-size: 2rem;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 4rem;
+    transform: translate(-50%, -50%);
     cursor: pointer;
     display: none;
     transition: display 0.5s ease;
@@ -531,6 +535,7 @@ footer{
 .slider .item:hover .project-link{
     display: block;
 }
+
 
 @media (max-width: 1400px) {
     main h1{
@@ -566,7 +571,10 @@ footer{
         height: 20rem;
     }
     .slider .list{
-        min-width: calc(30rem * var(--quantity));
+        min-width: calc(32rem * var(--quantity));
+    }
+    .project-link{
+    top: 60%;
     }
 }
 
